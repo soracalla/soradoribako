@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<div class="bg-layer" aria-hidden="true"></div>
 
 <header class="site-header">
 <div class="logo-mark">S</div>
@@ -90,5 +91,11 @@ msmaflink({"n":"サイバーリンク PHOTODRT3651Y27 PhotoDirector 365 1年版(
 © 2026 ソラ撮り道具箱（SoRaCaLLa）
 </footer>
 
+<script>
+(function(){var l=document.querySelector('.bg-layer');if(!l)return;
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var t=false;function u(){var y=window.scrollY||0;l.style.transform='translate3d(0,'+(y*0.12)+'px,0)';t=false;}
+window.addEventListener('scroll',function(){if(!t){t=true;requestAnimationFrame(u);}},{passive:true});u();})();
+</script>
 </body>
 </html>
